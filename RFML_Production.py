@@ -137,6 +137,11 @@ def rf_optimal(cleaned_data):
 # print(clean_df.columns)
 # rf_train(clean_df)
 
-test1 = pd.read_csv("data/test2.csv")
+# test1 = pd.read_csv("data/test2.csv")
+# clean_df = clean_dataframe(test1)
+# rf_optimal(clean_df)
+
+filelocation = input("Enter filename with respect to  the repository: ")
+test1 = pd.read_csv(filelocation)
 clean_df = clean_dataframe(test1)
 rf_optimal(clean_df)
